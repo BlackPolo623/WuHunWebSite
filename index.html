@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武魂天堂2 | 系統介紹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 背景系統 -->
+    <div class="bg-fixed"></div>
+    <div class="bg-overlay"></div>
+    
+    <!-- 動態光暈 -->
+    <div class="bg-glow">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+    </div>
+    
+    <!-- 粒子效果 -->
+    <div class="particles"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <img src="images/logo.png" alt="" class="logo" onerror="this.style.display='none'">
+            <span class="logo-text">武魂天堂2</span>
+        </div>
+    </header>
+    
+    <!-- 浮動導航 -->
+    <nav class="floating-nav">
+        <div class="nav-title">目錄導覽</div>
+        
+        <div class="nav-section">
+            <div class="nav-section-title">遊戲系統</div>
+            <div class="nav-items">
+                <a href="#rebirth" class="nav-item">轉生系統</a>
+                <a href="#vip" class="nav-item">VIP 系統</a>
+                <a href="#clan" class="nav-item">血盟系統</a>
+            </div>
+        </div>
+        
+        <div class="nav-section">
+            <div class="nav-section-title">遊戲副本</div>
+            <div class="nav-items">
+                <a href="#solo-dungeon" class="nav-item">單人副本</a>
+                <a href="#party-dungeon" class="nav-item">組隊副本</a>
+            </div>
+        </div>
+        
+        <div class="nav-section">
+            <div class="nav-section-title">強化系統</div>
+            <div class="nav-items">
+                <a href="#weapon-enhance" class="nav-item">武器強化</a>
+                <a href="#gem" class="nav-item">寶石鑲嵌</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            
+            <!-- ====== 遊戲系統 ====== -->
+            <section class="main-section" id="game-system">
+                <h2 class="section-title">遊戲系統</h2>
+                
+                <article class="content-block" id="rebirth">
+                    <h3 class="content-block-title">轉生系統</h3>
+                    
+                    <h4>系統簡介</h4>
+                    <p>轉生系統是角色突破等級上限、獲得永久強化的核心系統。當角色達到最高等級後，可透過轉生重新開始，同時保留部分能力並獲得額外加成。</p>
+                    
+                    <h4>轉生條件</h4>
+                    <p>角色必須達到 85 級才能進行轉生。轉生時需要消耗一定數量的金幣與轉生石。轉生石可透過每日任務、副本掉落或商城購買取得。</p>
+                    
+                    <h4>轉生流程</h4>
+                    <p>前往主城的「轉生神殿」與 NPC「轉生使者」對話，選擇「進行轉生」選項。確認消耗材料後，角色等級將重置為 1 級，但會獲得永久屬性加成。每次轉生可獲得全屬性 +5% 的永久加成，最高可進行 10 次轉生。</p>
+                    
+                    <h4>注意事項</h4>
+                    <p>轉生後裝備不會消失，但會因等級限制暫時無法穿戴。建議轉生前先準備好低等級裝備以便快速練等。第 5 次與第 10 次轉生會解鎖專屬稱號與外觀獎勵。</p>
+                </article>
+                
+                <article class="content-block" id="vip">
+                    <h3 class="content-block-title">VIP 系統</h3>
+                    
+                    <h4>系統簡介</h4>
+                    <p>VIP 系統提供多種等級的特權服務，玩家可透過儲值或累積消費提升 VIP 等級，享受更多遊戲便利功能與加成效果。</p>
+                    
+                    <h4>VIP 等級說明</h4>
+                    <p>VIP 共分為 10 個等級，每個等級對應不同的累積儲值金額。VIP 1 至 VIP 3 為基礎等級，提供經驗值加成 10% 至 30%。VIP 4 至 VIP 6 為進階等級，額外開放專屬副本入場權限與每日禮包。VIP 7 至 VIP 10 為尊貴等級，享有專屬外觀、坐騎、以及客服優先回覆等特權。</p>
+                    
+                    <h4>如何提升 VIP 等級</h4>
+                    <p>開啟遊戲內的「儲值中心」進行任意金額儲值，系統會自動累計儲值金額並提升對應的 VIP 等級。VIP 等級一旦達成即為永久有效，不會因時間經過而降級。</p>
+                    
+                    <h4>VIP 特權查詢</h4>
+                    <p>點擊遊戲畫面右上角的 VIP 圖示，可查看當前 VIP 等級、距離下一等級所需金額、以及目前享有的所有特權明細。</p>
+                </article>
+                
+                <article class="content-block" id="clan">
+                    <h3 class="content-block-title">血盟系統</h3>
+                    
+                    <h4>系統簡介</h4>
+                    <p>血盟是遊戲中的公會系統，玩家可以創建或加入血盟，與其他成員一同參與各種團體活動、攻城戰，並享有血盟專屬的增益效果。</p>
+                    
+                    <h4>創建血盟</h4>
+                    <p>角色等級達到 40 級後，可前往主城的「血盟管理員」處創建血盟。創建血盟需要消耗 100 萬金幣，並需要輸入血盟名稱（2-12 字元，不可包含特殊符號）。創建者自動成為盟主，擁有最高管理權限。</p>
+                    
+                    <h4>加入血盟</h4>
+                    <p>開啟血盟介面（快捷鍵 G），點選「搜尋血盟」可瀏覽目前開放招募的血盟列表。選擇想加入的血盟後點擊「申請加入」，等待該血盟管理員審核通過即可成為成員。每位玩家同時間只能加入一個血盟。</p>
+                    
+                    <h4>血盟技能</h4>
+                    <p>血盟等級提升後可解鎖血盟技能，這些技能對所有成員生效。盟主或幹部可使用血盟資金升級技能。技能包含：攻擊力加成、防禦力加成、經驗值加成、掉落率加成等。</p>
+                    
+                    <h4>退出與解散</h4>
+                    <p>成員可隨時透過血盟介面退出血盟，退出後有 24 小時的冷卻時間才能加入新血盟。盟主若要解散血盟，需先將所有成員移除，且血盟倉庫必須清空。</p>
+                </article>
+            </section>
+            
+            <!-- ====== 遊戲副本 ====== -->
+            <section class="main-section" id="dungeon">
+                <h2 class="section-title">遊戲副本</h2>
+                
+                <article class="content-block" id="solo-dungeon">
+                    <h3 class="content-block-title">單人副本</h3>
+                    
+                    <h4>副本說明</h4>
+                    <p>單人副本是專為個人挑戰設計的副本內容，不需組隊即可進入。副本內的怪物強度會根據玩家等級進行調整，確保適當的挑戰難度。</p>
+                    
+                    <h4>進入方式</h4>
+                    <p>開啟副本介面（快捷鍵 D），選擇「單人副本」分頁，點選想要挑戰的副本後按下「進入」按鈕。部分副本有等級限制與每日進入次數限制，請注意查看副本資訊。</p>
+                    
+                    <h4>副本列表</h4>
+                    <p>【夢幻之境】等級需求 30 級，每日可進入 3 次，主要產出經驗值與金幣。【試煉之塔】等級需求 50 級，無進入次數限制，採用爬塔機制，層數越高獎勵越豐厚。【遺忘神殿】等級需求 70 級，每日可進入 1 次，有機率掉落稀有裝備與材料。</p>
+                    
+                    <h4>副本獎勵</h4>
+                    <p>完成副本後會根據通關評價獲得不同獎勵。評價標準包含：通關時間、受傷次數、擊殺數量等。S 評價可獲得額外獎勵箱，有機率開出稀有道具。</p>
+                </article>
+                
+                <article class="content-block" id="party-dungeon">
+                    <h3 class="content-block-title">組隊副本</h3>
+                    
+                    <h4>副本說明</h4>
+                    <p>組隊副本需要多名玩家合作挑戰，副本內有強力的 Boss 與機關，需要團隊配合才能順利通關。獎勵比單人副本更為豐厚。</p>
+                    
+                    <h4>組隊方式</h4>
+                    <p>可透過「組隊系統」（快捷鍵 P）建立隊伍或加入他人隊伍。也可使用「自動配對」功能，系統會自動媒合適當的隊友。建議隊伍組成包含坦克、輸出、治療等不同職業以提高通關效率。</p>
+                    
+                    <h4>副本列表</h4>
+                    <p>【龍之巢穴】5 人副本，等級需求 60 級，每週可進入 3 次。Boss「古龍艾爾乎德」擁有強力的範圍技能，需注意走位躲避。【深淵要塞】10 人副本，等級需求 75 級，每週可進入 2 次。共有 3 個 Boss 關卡，建議攜帶抗性藥水。</p>
+                    
+                    <h4>拾取規則</h4>
+                    <p>組隊副本採用「擲骰分配」機制，裝備掉落時所有符合職業的成員可參與擲骰，點數最高者獲得物品。隊長可在進入副本前調整分配規則為「隊長分配」或「自由拾取」。</p>
+                </article>
+            </section>
+            
+            <!-- ====== 強化系統 ====== -->
+            <section class="main-section" id="enhance">
+                <h2 class="section-title">強化系統</h2>
+                
+                <article class="content-block" id="weapon-enhance">
+                    <h3 class="content-block-title">武器強化</h3>
+                    
+                    <h4>系統簡介</h4>
+                    <p>武器強化可提升武器的基礎攻擊力，強化等級越高，攻擊力加成越多。最高可將武器強化至 +20。</p>
+                    
+                    <h4>強化方式</h4>
+                    <p>前往主城鐵匠處選擇「武器強化」功能，將武器放入強化欄位，再放入對應的強化石。點擊「強化」按鈕進行強化，成功後武器等級 +1，失敗則根據使用的強化石類型有不同結果。</p>
+                    
+                    <h4>強化機率</h4>
+                    <p>+1 至 +4 為安全強化區間，成功率 100%。+5 至 +10 成功率逐漸降低，從 90% 降至 50%，失敗時強化等級 -1。+11 至 +20 成功率為 30%，失敗時裝備有機率損壞。使用「祝福強化石」可在失敗時保護裝備不損壞。</p>
+                    
+                    <h4>強化加成</h4>
+                    <p>每 +1 強化等級提供基礎攻擊力 3% 的加成。+10 以上每級額外提供 1% 暴擊率。+15 以上武器會產生光效外觀，+20 武器擁有專屬特效。</p>
+                </article>
+                
+                <article class="content-block" id="gem">
+                    <h3 class="content-block-title">寶石鑲嵌</h3>
+                    
+                    <h4>系統簡介</h4>
+                    <p>寶石鑲嵌系統可在裝備上鑲嵌各種寶石，獲得額外的屬性加成。不同顏色的寶石提供不同類型的屬性。</p>
+                    
+                    <h4>鑲嵌方式</h4>
+                    <p>開啟背包（快捷鍵 B），右鍵點擊有寶石孔的裝備，選擇「寶石鑲嵌」。將寶石拖曳至空的寶石孔即可完成鑲嵌。每件裝備最多有 3 個寶石孔，孔數取決於裝備品質。</p>
+                    
+                    <h4>寶石種類</h4>
+                    <p>紅寶石：增加攻擊力。藍寶石：增加魔法力。黃寶石：增加防禦力。綠寶石：增加生命值。紫寶石：增加暴擊率。橙寶石：增加命中率。每種寶石分為 1 至 10 級，等級越高屬性加成越多。</p>
+                    
+                    <h4>寶石合成</h4>
+                    <p>3 顆相同等級、相同種類的寶石可合成為高一級的寶石。前往主城的「寶石工匠」處進行合成。合成有 100% 成功率，不會損失材料。</p>
+                    
+                    <h4>拆卸寶石</h4>
+                    <p>已鑲嵌的寶石可透過「寶石拆卸」功能取出。拆卸需要消耗「拆卸工具」，可在雜貨商處購買。拆卸後寶石完整保留，可重新鑲嵌至其他裝備。</p>
+                </article>
+            </section>
+            
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 武魂天堂2. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
