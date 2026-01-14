@@ -415,6 +415,7 @@ $allSections = [
             ],
 
         ],
+    ],
 
         [
                 'id' => 'instance',
@@ -511,6 +512,8 @@ $allSections = [
 
 
                 ],
-    ],
+        ],
+
+
 ];
 ?>
