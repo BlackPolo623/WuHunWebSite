@@ -27,8 +27,14 @@ require_once 'php/data.php';
     <!-- Header -->
     <header class="header">
         <div class="header-inner">
-            <img src="<?php echo $siteConfig['logo']; ?>" alt="" class="logo" onerror="this.style.display='none'">
-            <span class="logo-text"><?php echo $siteConfig['site_name']; ?></span>
+            <div class="header-left">
+                <img src="<?php echo $siteConfig['logo']; ?>" alt="" class="logo" onerror="this.style.display='none'">
+                <span class="logo-text"><?php echo $siteConfig['site_name']; ?></span>
+            </div>
+            <nav class="header-nav">
+                <a href="index.php" class="header-nav-link active">遊戲系統</a>
+                <a href="newbie-guide.php" class="header-nav-link">新手教學</a>
+            </nav>
         </div>
     </header>
     

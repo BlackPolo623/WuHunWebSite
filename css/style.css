@@ -167,7 +167,64 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
     gap: 15px;
+}
+
+/* Header Navigation */
+.header-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.header-nav-link:hover::before {
+    left: 100%;
+}
+
+.header-nav-link:hover {
+    color: var(--color-primary);
+    border-color: var(--color-border);
+    background: rgba(201, 162, 39, 0.05);
+    text-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+.header-nav-link.active {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    background: rgba(201, 162, 39, 0.1);
+    text-shadow: 0 0 15px var(--color-primary-glow);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.2);
 }
 
 .logo img {
@@ -310,6 +367,62 @@ main {
     padding-top: 80px;
     padding-bottom: 60px;
     margin-right: 220px;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background: linear-gradient(135deg, rgba(201, 162, 39, 0.15) 0%, rgba(18, 18, 22, 0.95) 100%);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    padding: 40px 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-banner::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    animation: bannerGlow 3s ease-in-out infinite;
+}
+
+@keyframes bannerGlow {
+    0%, 100% { left: -100%; }
+    50% { left: 100%; }
+}
+
+.welcome-banner h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 30px var(--color-primary-glow), 0 0 60px rgba(201, 162, 39, 0.3);
+    animation: titlePulse 4s ease-in-out infinite;
+}
+
+@keyframes titlePulse {
+    0%, 100% { 
+        text-shadow: 0 0 30px var(--color-primary-glow), 0 0 60px rgba(201, 162, 39, 0.3);
+        transform: scale(1);
+    }
+    50% { 
+        text-shadow: 0 0 40px var(--color-primary), 0 0 80px var(--color-primary-glow);
+        transform: scale(1.02);
+    }
+}
+
+.welcome-banner p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    letter-spacing: 1px;
+    line-height: 1.8;
 }
 
 .container {
@@ -562,9 +675,54 @@ main {
 
 @media (max-width: 768px) {
     .header { padding: 12px 20px; }
+    .header-inner { flex-direction: column; gap: 15px; }
+    .header-left { flex-direction: column; gap: 10px; }
+    .header-nav { 
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .header-nav-link {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+    }
     .logo-text { font-size: 1.2rem; }
     .container { padding: 0 20px; }
     .content-block { padding: 20px; }
     .section-title { font-size: 1.3rem; }
     .corner-glow { display: none; }
+    .welcome-banner {
+        padding: 30px 25px;
+    }
+    .welcome-banner h1 {
+        font-size: 1.6rem;
+    }
+    .welcome-banner p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* PDF 容器 */
+.pdf-container {
+    width: 100%;
+    background: var(--color-section);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 800px;
+    border: none;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .pdf-viewer {
+        height: 600px;
+    }
 }
