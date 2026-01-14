@@ -38,6 +38,7 @@ $siteConfig = [
             <nav class="header-nav">
                 <a href="index.php" class="header-nav-link">遊戲系統</a>
                 <a href="newbie-guide.php" class="header-nav-link active">新手教學</a>
+                <a href="potential-system.php" class="header-nav-link">潛能系統</a>
             </nav>
         </div>
     </header>
